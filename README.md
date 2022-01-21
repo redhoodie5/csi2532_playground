@@ -1,2 +1,3 @@
-# csi2532_playground
-CSI2532 Labs
+README
+Cat Wong - 300166165
+
