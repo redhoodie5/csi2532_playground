@@ -1,5 +1,17 @@
-1. SELECT name, birthplace
+1. 
+SELECT name, birthplace
 FROM artists;
   Caravaggio|Milan
   Smith|Ottawa
   Picasso|Malaga
+2. 
+SELECT title, price
+FROM artworks
+WHERE year > 1600;
+  Blue|10000
+3.
+SELECT title, type
+FROM artworks
+WHERE year == 2000 OR artist_name == 'Picasso';
+  Blue|Modern
+ 4.
