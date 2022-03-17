@@ -1,0 +1,5 @@
+1. SELECT name, birthplace
+FROM artists;
+  Caravaggio|Milan
+  Smith|Ottawa
+  Picasso|Malaga
