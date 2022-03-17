@@ -14,4 +14,20 @@ SELECT title, type
 FROM artworks
 WHERE year == 2000 OR artist_name == 'Picasso';
   Blue|Modern
- 4.
+4.
+SELECT name, birthplace 
+FROM artists
+WHERE (EXTRACT(YEAR FROM dateofbirth) <= 1930) AND  (EXTRACT(YEAR FROM dateofbirth) >= 1800);
+  Picasso|Malaga
+5.
+SELECT name, birthplace 
+FROM artists
+WHERE style IN ('Modern','Baroque','Renaissance');
+  Caravaggio|Milan
+  Smith|Ottawa
+6.
+SELECT *
+FROM artworks
+ORDER BY title;
+  Blue|2000|Modern|10000|Smith
+  The Cardsharps|1594|Baroque|40000|Caravaggio
